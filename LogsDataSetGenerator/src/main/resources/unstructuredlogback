@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT_UNSTRUCTURED" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern> </encoder>
+    </appender>
+
+    <appender name="FILE_UNSTRUCTURED" class="ch.qos.logback.core.FileAppender">
+        <file>unstructured_logs.log</file>
+        <encoder>
+            <pattern>%msg%n</pattern> </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT_UNSTRUCTURED" />
+        <appender-ref ref="FILE_UNSTRUCTURED" />
+    </root>
+</configuration>
